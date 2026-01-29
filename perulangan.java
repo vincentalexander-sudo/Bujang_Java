@@ -13,7 +13,7 @@ public class perulangan {
         while(counter <= jumlah){
             if (counter == 3) {
                counter++;
-               continue;
+               break;
             }
             System.out.println(counter);
             counter++;

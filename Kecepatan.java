@@ -20,6 +20,10 @@ public class Kecepatan {
         input.nextLine();
 
         for (int t = 0; t <= waktuMaksimal; t++) {
+            if (t % 2 != 0) {
+                continue;
+            }
+            
             ketinggian = (kecepatanAwal * t) - (0.5 * gravitasi * (t * t));
             kecepatanSekarang = kecepatanAwal - (gravitasi * t);
 
@@ -36,10 +40,6 @@ public class Kecepatan {
                 System.out.println("Detik ke-" + t + ": Cure Sky sudah mendarat!");
                 detik = t; 
                 break; 
-            }
-
-            if (t % 2 != 0) {
-                continue;
             }
         }
 

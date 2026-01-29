@@ -18,6 +18,6 @@ public class Kuadrat {
             hasil *= bilKuadrat;
         }
 
-        System.out.println(hasil);
+        System.out.println("Hasil: " + hasil);
     }
 }
